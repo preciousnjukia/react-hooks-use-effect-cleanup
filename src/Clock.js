@@ -8,7 +8,6 @@ function Clock() {
       setTime(new Date());
     }, 1000);
 
-    // returning a cleanup function
     return function cleanup() {
       clearInterval(timerID);
     };
